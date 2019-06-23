@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- CSS stylesheet link -->
-  <link rel="stylesheet" href="./style.css">
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <title>JavaScript Quiz</title>
-</head>
-<body>
-  
-</body>
+    <title>JavaScript Quiz</title>
+  </head>
+  <body>
+    <h1>A Quiz Game</h1>
+
+    <!-- Area for Question and Answers -->
+    <div id="quiz">
+      <!-- <div id="question"></div>
+      <div id="options"></div> -->
+    </div>
+    <!-- Submit Button -->
+    <button type="submit" id="submitBtn" class="btn btn-primary mb-2">Submit</button>
+    <!-- Correct / Incorrect  -->
+    <div id="results">
+      <!-- <p>Correct: <span id="correct">0</span</p>
+      <p>Incorrect: <span id="incorrect">0</span></p> -->
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
