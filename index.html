@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+	<title>TrivialTrivia</title>
+</head>
+<body>
 
-    <!-- CSS stylesheet link -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- BOOTSTRAP CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<!-- this button is created to start the game -->
+	<button class='startGame'>Click Me to Play!</button>
+<!-- a wrapper div holds all the items that will be displayed after the startGame button is clicked -->
+	<div class='wrapper'>
 
-    <title>JavaScript Quiz</title>
-  </head>
-  <body>
-    <h1>A Quiz Game</h1>
+		<h1 class='header'>Trivia Game!</h1>
+<!-- div to hold countdown timer -->
+		<div class='timer' id='timeLeft'></div>
+<!-- div to hold all the questions -->
+		<div class='form' id='questions-container'></div>
 
-    <!-- Area for Question and Answers -->
-    <div id="quiz">
-      <!-- <div id="question"></div>
-      <div id="options"></div> -->
-    </div>
-    <!-- Submit Button -->
-    <button type="submit" id="submitBtn" class="btn btn-primary mb-2">Submit</button>
-    <!-- Correct / Incorrect  -->
-    <div id="results">
-      <!-- <p>Correct: <span id="correct">0</span</p>
-      <p>Incorrect: <span id="incorrect">0</span></p> -->
-    </div>
-
-    <script src="./app.js"></script>
-  </body>
+	</div>
+<!-- button to end game if player finishes the game before the time is up -->
+	<button id='doneButton'>Done</button>
+<!-- message to be displayed when time is up -->
+	<div class='message' id='messageDiv'></div>
+<!-- div to display the results of the game -->
+	<div class='results'></div>
+<!-- linking to jquery and the local js file -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type='text/javascript' src='./app.js'></script>	
+</body>
 </html>
